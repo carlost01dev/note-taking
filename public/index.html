@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css" />
+    <title>App To Do</title>
+</head>
+
+<body>
+    <h2>RESTful API</h2>
+    <form id="user_form">
+        <field>
+            <label>GET</label><br />
+          
+            <label>movie id:</label>
+            <input id="movieId" name="movieId" type="text" placeholder="Movie id" />
+            <button id="getButton" name="getButton" value="submit" type="submit">Get movies</button>
+
+        </field>
+    </form>
+    <form id="user_form_post">
+        <field>
+            <br />
+            <label>POST</label>
+
+            <label>movie title</label>
+            <input id="movieInput" type="text" name="movieTitle" placeholder="post movies" />
+          
+            <label>movie director</label>
+            <input id="directorInput" type="text" name="movieDirector" placeholder="post movies" />
+
+            <button id="postButton" name="postButton">POST</button>
+
+
+        </field>
+    </form>
+
+    <form id="user_form_delete">
+        <field>
+            <label>DELETE:</label><br />
+            <label>movie id:</label>
+            
+            <input id="movieId" name="movieId" type="text" placeholder="Movie id" />
+            <button id="deleteButton" name="deleteButton" value="submit" type="submit">Delete movies</button>
+
+        </field>
+    </form>
+
+    <form id="user_form_put">
+        <field>
+            <label>PUT:</label><br />
+            <label>movie title:</label>
+            
+            <input id="movieInput" name="movieTitle" type="text" placeholder="update movie" />
+            <label>movie director:</label>
+            <input id="directorInput" name="movieDirector" type="text" placeholder="update director" />
+            <label>movie id:</label>
+            <input id="movieId" name="movieId" type="text" placeholder="movie id" />
+           
+            <button id="putButton" name="putButton" value="submit" method="PUT">PUT </button>
+
+        </field>
+    </form>
+
+
+    <h2>Movies in Database:</h2>
+    <div id="results">
+
+    </div>
+    <script src="./api.js"></script>
+</body>
+
+</html>
